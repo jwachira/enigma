@@ -30,7 +30,7 @@ describe Enigma do
       response = client.execute(
         :method  => :get,
         :path    => "/",
-        :headers => {"X_CLETUS_SIGNATURE" => Enigma.signature('get', '/', '')}
+        :headers => {"X_ENIGMA_SIGNATURE" => Enigma.signature('get', '/', '')}
       )
 
       response.code.should == 200
@@ -42,7 +42,7 @@ describe Enigma do
       response = client.execute(
         :method  => :get,
         :path    => "/",
-        :headers => {"X_CLETUS_SIGNATURE" => "h4x0r"}
+        :headers => {"X_ENIGMA_SIGNATURE" => "h4x0r"}
       )
 
       response.code.should == 403
