@@ -1,6 +1,8 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
 describe Enigma do
+
+  Enigma.server_key = "abcd1234abcd1234"
   
   class TestApp < Sinatra::Base
     get '/' do
