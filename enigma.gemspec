@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{enigma}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["teejayvanslyke"]
-  s.date = %q{2010-09-27}
+  s.date = %q{2010-09-29}
   s.description = %q{TODO: longer description of your gem}
   s.email = %q{teejay.vanslyke@gmail.com}
   s.extra_rdoc_files = [
@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "enigma.gemspec",
      "lib/enigma.rb",
      "spec/enigma_spec.rb",
      "spec/rack_test_client.rb",
