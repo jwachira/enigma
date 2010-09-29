@@ -60,6 +60,7 @@ module Enigma
 		end
 
 		def execute(method, path, payload)
+      p [ method, path, payload ]
 			response = http.send(method, path,
 													 :headers => headers(method, path, payload),
 													 :body => payload,
